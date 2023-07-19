@@ -199,6 +199,10 @@ vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbt-vendor.so
 
+# Bluetooth (A2DP)
+vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
+vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
+
 # Connectivity
 vendor/bin/conninfra_loader
 vendor/firmware/soc2_2_ram_mcu_1d_1_hdr.bin
