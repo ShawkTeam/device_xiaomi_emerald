@@ -1,5 +1,8 @@
 # Unpinned blobs from emerald-user-14-UP1A.231005.007-V816.0.1.0.UNFMIXM-release-keys
 
+# Batterysecret
+vendor/bin/batterysecret
+
 # Display
 vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789:vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
