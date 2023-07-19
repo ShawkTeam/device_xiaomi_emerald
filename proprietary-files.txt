@@ -184,6 +184,12 @@ vendor/etc/audio_param/VoWVoiceCommand_ParamUnitDesc.xml
 # Batterysecret
 vendor/bin/batterysecret
 
+# Connectivity
+vendor/bin/conninfra_loader
+vendor/firmware/soc2_2_ram_mcu_1d_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_1e_1_hdr.bin
+vendor/firmware/txpowerctrl.cfg
+
 # Display
 vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789:vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
