@@ -119,6 +119,13 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder.vendor \
+    android.hidl.allocator@1.0.vendor
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
