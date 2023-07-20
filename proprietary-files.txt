@@ -1,5 +1,9 @@
 # Unpinned blobs from emerald-user-14-UP1A.231005.007-V816.0.1.0.UNFMIXM-release-keys
 
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
+
 # Batterysecret
 vendor/bin/batterysecret
 
