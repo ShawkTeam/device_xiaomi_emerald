@@ -199,6 +199,22 @@ PRODUCT_PACKAGES += \
     init.insmod.sh \
     ueventd.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    libshim_sensors \
+    libsensorndkbridge \
+    android.hardware.sensors@1.0.vendor \
+    android.hardware.sensors@2.1.vendor \
+    android.frameworks.sensorservice@1.0.vendor \
+    android.frameworks.sensorservice@1.0 \
+    android.hardware.sensors@2.1-service.xiaomi-multihal
+
+PRODUCT_PACKAGES += \
+    sensors.dynamic_sensor_hal:64
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/sensors,$(TARGET_COPY_OUT_VENDOR)/etc/sensors)
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 

@@ -134,6 +134,9 @@ ro.vendor.mtk_video_hevc_enc_support=1
 vendor.mtk.vdec.waitkeyframeforplay=7
 debug.stagefright.ccodec=1
 
+# Sensors
+ro.vendor.mtk.sensor.support=yes
+
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
