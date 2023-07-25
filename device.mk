@@ -260,6 +260,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.xiaomi-multihal
 
 PRODUCT_PACKAGES += \
+    libshim_sink
+
+PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal:64
 
 PRODUCT_COPY_FILES += \
