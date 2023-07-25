@@ -11,6 +11,10 @@ on init
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
     mkdir /storage/usbotg 0700 root root
 
+    # Set xiaomi touch permissions
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
+
 on post-fs-data
 
 #N6 code for HQ-309505 by p-sunyuting at 2023/07/20 start
