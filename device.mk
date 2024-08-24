@@ -10,6 +10,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false
+
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
