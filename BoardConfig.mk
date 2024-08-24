@@ -107,6 +107,9 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_BOARD_PLATFORM := mt6789
 BOARD_HAS_MTK_HARDWARE := true
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6789
 TARGET_USERIMAGES_USE_EXT4 := true
