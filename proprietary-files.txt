@@ -123,3 +123,7 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.12.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.13.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.14.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.15.so
+
+# Display Configs
+vendor/etc/cust_color_dsi_n6_41_02_0b_dsc_vdo.xml
+vendor/etc/cust_color_dsi_n6_42_0d_0a_dsc_vdo.xml
