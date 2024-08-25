@@ -120,6 +120,17 @@ ro.vendor.mtk_mitee_support=1
 # Gatekeeper
 ro.hardware.gatekeeper=mitee
 
+# Media
+debug.mediatek.disp_decompress=1
+debug.stagefright.c2inputsurface=-1
+media.c2.dmabuf.padding=3072
+ro.vendor.jpeg_decode_sw_opt=1
+ro.vendor.mtk_config_max_dram_size=0x800000000
+ro.vendor.mtk_sec_video_path_support=1
+ro.vendor.mtk_video_hevc_enc_support=1
+vendor.mtk.vdec.waitkeyframeforplay=7
+debug.stagefright.ccodec=1
+
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
