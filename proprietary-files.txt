@@ -151,6 +151,9 @@ vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.mitee.so
+
 # Trusted Execution Environment (TEE)
 vendor/bin/hw/android.hardware.security.keymint@1.0-service.mitee
 vendor/etc/init/android.hardware.security.keymint-service.mitee.rc
