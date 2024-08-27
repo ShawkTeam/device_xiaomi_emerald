@@ -468,6 +468,41 @@ vendor/lib64/libpowerhal.so
 vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
+# Thermal
+vendor/bin/mi_thermald
+vendor/bin/thermal_core
+vendor/bin/thermal_intf
+vendor/etc/thermal/thermal.conf
+vendor/etc/thermal/disable_thermal.conf
+vendor/etc/thermal/disable_skin_control.conf
+vendor/etc/thermal/disable_thermal_temp.conf
+vendor/etc/thermal/disable_throttling.conf
+vendor/etc/init/init.thermal_core.rc
+vendor/etc/thermal-camera.conf
+vendor/etc/thermal-cclassvideo.conf
+vendor/etc/thermal-cgame.conf
+vendor/etc/thermal-chg-only.conf
+vendor/etc/thermal-class0.conf
+vendor/etc/thermald-devices.conf
+vendor/etc/thermal-hp-game.conf
+vendor/etc/thermal-hp-normal.conf
+vendor/etc/thermal-huanji.conf
+vendor/etc/thermal-map.conf
+vendor/etc/thermal-mgame.conf
+vendor/etc/thermal-navigation.conf
+vendor/etc/thermal-nolimits.conf
+vendor/etc/thermal-normal.conf
+vendor/etc/thermal-phone.conf
+vendor/etc/thermal-tgame.conf
+vendor/etc/thermal-videochat.conf
+vendor/etc/thermal-video.conf
+vendor/etc/thermal/thermal.conf
+vendor/etc/thermal/thermal_mtbf.conf
+vendor/etc/thermal/thermal_policy_00.conf
+vendor/etc/thermal/thermal_policy_02.conf
+vendor/etc/thermal/thermal_policy_08.conf
+vendor/lib64/hw/thermal_hal.so
+
 # Sensors
 vendor/etc/elliptic_sensor.xml
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
