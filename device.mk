@@ -109,6 +109,15 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
+    vendor.xiaomi.hardware.fingerprintextension@1.0.vendor \
+    vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
