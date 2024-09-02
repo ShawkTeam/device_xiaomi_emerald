@@ -237,6 +237,7 @@ PRODUCT_PACKAGES += \
     fstab.enableswap \
     init.connectivity.common.rc \
     init_connectivity.rc \
+    init.batterysecret.rc \
     init.modem.rc \
     init.mt6789.rc \
     init.mt6789.power.rc \

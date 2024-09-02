@@ -19,6 +19,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.batterysecret.rc",
+    src: "etc/init.batterysecret.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "fstab.emmc",
     src: "etc/fstab.emmc",
     vendor: true,
