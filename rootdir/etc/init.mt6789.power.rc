@@ -9,6 +9,12 @@ on charger
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq 0
     write /sys/class/devfreq/mtk-dvfsrc-devfreq/userspace/set_freq 0
 
+# update cpus for cpuset cgroup
+    write /dev/cpuset/foreground/cpus 0-2,4-7
+    write /dev/cpuset/foreground/boost/cpus 0-7
+    write /dev/cpuset/background/cpus 0-2
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/top-app/cpus 0-7
 
 on post-fs-data
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor sugov_ext
@@ -44,3 +50,9 @@ on property:sys.boot_completed=1
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 0
     write /dev/cpuctl/background/cpu.uclamp.min 0
     write /dev/cpuctl/background/cpu.uclamp.latency_sensitive 0
+
+# Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
+on property:sys.boot_completed=1
+    trigger enable-low-power

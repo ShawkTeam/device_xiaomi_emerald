@@ -212,15 +212,16 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek
+    android.hardware.power-service.xiaomi-libperfmgr \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
+    libmtkperf_client_vendor \
+    libmtkperf_client
 
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.1.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -235,10 +236,10 @@ PRODUCT_PACKAGES += \
     fstab.emmc \
     fstab.enableswap \
     init.connectivity.common.rc \
-    init.cgroup.rc \
     init_connectivity.rc \
     init.modem.rc \
     init.mt6789.rc \
+    init.mt6789.power.rc \
     init.mt6789.usb.rc \
     init.mtkgki.rc \
     init.project.rc \
@@ -269,6 +270,8 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
     hardware/mediatek \
     hardware/xiaomi
 
