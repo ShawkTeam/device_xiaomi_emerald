@@ -89,9 +89,9 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "ueventd.rc",
+    name: "ueventd.mt6789.rc",
     filename: "ueventd.rc",
-    src: "etc/ueventd.rc",
+    src: "etc/ueventd.mt6789.rc",
     vendor: true,
 }
 
